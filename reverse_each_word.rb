@@ -1,9 +1,5 @@
-require "pry"
+
 
 def reverse_each_word(str)
-  str = (str).to_a
-
-
-
-
+  str.split.collect {|word| word.reverse}.join(" ")
 end
